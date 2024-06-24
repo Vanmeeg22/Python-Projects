@@ -19,7 +19,7 @@ class Hospital:
         Dataframe = Frame(self.root, bd=20, relief=RIDGE)
         Dataframe.place(x=0, y=130, width=1530, height=400)
 
-        DataframeLeft = LabelFrame(Dataframe, bd=10, relief=RIDGE, padx=10, font=("times new roman", 12, "Bold"), "Patient Information")
+        DataframeLeft = LabelFrame(Dataframe, bd=10, relief=RIDGE, padx=10, font=("times new roman", 12, "Bold"), text="Patient Information")
 
         DataframeLeft.place(x=0, y=5, width=980, height=350)
 
