@@ -19,6 +19,7 @@ def speed_time(time_start, time_end, userinput):
 
 if __name__ == '__main__':
     while True:
+        print()
         check = input("Are you ready to test your typing speed? Type: Yes / No :")
         if check == "Yes":
             test = ["Artificial intelligence (AI), in its broadest sense, is intelligence exhibited by machines, particularly computer systems.",
@@ -28,21 +29,25 @@ if __name__ == '__main__':
 
             test1 = r.choice(test)
 
-            print("Test your typing speed by typing the text given below:")
+            print()
+            print("TEST YOUR TYPING SPEED BY TYPING THE TEXT GIVEN BELOW:")
             print()
             print(test1)
-            print()
             print()
 
             time_1 = time()
             testinput = input(" Enter: ")
             time_2 = time()
 
-            print("Typing speed: ", speed_time(time_1, time_2, testinput), "word/sec")
+            print()
+            print("Speed: ", speed_time(time_1, time_2, testinput), "word/sec")
             print("Error: ", mistake(test1, testinput))
         elif check == "No":
+            print()
             print("Thank you for testing yourself with us!")
+            print()
             break
         else:
+            print()
             print("Please enter either 'Yes' or 'No' only.")
             continue
